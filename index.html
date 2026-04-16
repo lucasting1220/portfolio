@@ -402,6 +402,7 @@
     .b-lead     { background: rgba(255,255,255,0.07); color: #c8c8c8; }
     .b-tech     { background: rgba(255,255,255,0.07); color: #b0b0b0; }
     .b-ops      { background: rgba(255,255,255,0.07); color: #c0c0c0; }
+    .b-comp     { background: rgba(255,255,255,0.07); color: #b8c8d8; }
 
     .tl-role {
       font-family: 'Space Grotesk', sans-serif;
@@ -438,6 +439,18 @@
       position: relative;
     }
     .tl-bullets li::before { content: '›'; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+    .tl-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--nyc);
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .tl-link:hover { opacity: 0.75; }
     .tl-note {
       margin-top: 1rem;
       padding-top: 1rem;
@@ -905,6 +918,28 @@
           <li>Deployed CNN to accelerate topology optimization and automate prediction of material density distribution</li>
           <li>Designed a custom web UI to host the Hack3D cybersecurity challenge platform</li>
         </ul>
+      </div>
+    </div>
+
+    <!-- Salesforce Competition -->
+    <div class="tl-entry">
+      <div class="tl-dot nyc now"></div>
+      <div class="tl-card">
+        <span class="tl-badge b-comp">Competition</span>
+        <p class="tl-role">Product Developer</p>
+        <p class="tl-org">Salesforce AI Competition · New York City</p>
+        <div class="tl-meta">
+          <span>2026</span>
+          <span class="tl-current">Current</span>
+        </div>
+        <ul class="tl-bullets">
+          <li>Built <em style="color:var(--text);font-style:normal">Robin</em> — an AI sidekick that eliminates context switching for Salesforce users by auto-assembling relevant client data</li>
+          <li>Reduced manual context assembly from 8 minutes to 60 seconds; projected $750,000 saved annually per 100-person company</li>
+          <li>Designed for 40% of Salesforce's mid-market customer base with 7× ROI in year one</li>
+        </ul>
+        <a href="https://robinslidedeck.vercel.app/" target="_blank" rel="noopener" class="tl-link">
+          View Pitch Deck ↗
+        </a>
       </div>
     </div>
 
